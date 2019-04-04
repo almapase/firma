@@ -50,19 +50,25 @@
       <label>Télefono: </label>
       <input type="text" v-model="phone">
       <br>
-      <label>Ciudad:</label><br>
+      <label>Dirección:</label><br>
       <input type="radio" id="santiago" value="Santiago" v-model="city">
       <label for="santiago">Santiago</label>
       <br>
       <input type="radio" id="thno" value="Talcahuano" v-model="city">
       <label for="thno">Talcahuano</label>
       <br>
+      <input type="radio" id="thno" value="San Vicente" v-model="city">
+      <label for="svn">San Vicente</label>
+      <br>
+      <input type="radio" id="thno" value="TTP" v-model="city">
+      <label for="ttp">TTP</label>
+      <br>
       <input type="radio" id="dalcahue" value="Dalcahue" v-model="city">
       <label for="dalcahue">Dalcahue</label>
       <br>
     </div>
     <div id="firma">
-      <table border=0 style="padding:40px 0 0 0;">
+      <table border=0 style="padding:40px 0 0 0; line-height: 13px; letter-spacing: -0.3px;">
       <tbody>
         <tr>
           <td>
@@ -90,7 +96,7 @@
               <template v-if="city === 'Santiago'">
                 <span style="font-size:13px; font-family:Arial; color:#666">
                   <a href="#" style="text-decoration:none; color:#555">Av. Tajamar 183, of 702, Las Condes, Santiago.</a><br>
-                  <a href="#" style="text-decoration:none; color:#555">+562 2233 7151</a><br>
+                  <a href="#" style="text-decoration:none; color:#555">+56 2 2233 7151</a><br>
                   <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
                 </span>
               </template>
@@ -108,13 +114,27 @@
                   <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
                 </span>
               </template>
+              <template v-if="city === 'San Vicente'">
+                <span style="font-size:13px; font-family:Arial; color:#666">
+                  <a href="#" style="text-decoration:none; color:#555">Caleta Infernillo S/N, Talcahuano.</a><br>
+                  <a href="#" style="text-decoration:none; color:#555">+56 41 285 7095</a><br>
+                  <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
+                </span>
+              </template>
+              <template v-if="city === 'TTP'">
+                <span style="font-size:13px; font-family:Arial; color:#666">
+                  <a href="#" style="text-decoration:none; color:#555">Blanco Encalada 701, Talcahuano.</a><br>
+                  <a href="#" style="text-decoration:none; color:#555">+56 41 285 7093</a><br>
+                  <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
+                </span>
+              </template>
             </div>
           </td>
         </tr>
       </tbody>
       </table>
 
-      <table border=0 style="padding:40px 0 0 0;">
+      <!-- <table border=0 style="padding:40px 0 0 0;">
         <tbody>
           <tr>
             <td>
@@ -164,9 +184,9 @@
             </td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
 
-      <table border=0 style="padding:40px 0 0 0;">
+      <!-- <table border=0 style="padding:40px 0 0 0;">
         <tbody>
           <tr>
             <td>
@@ -221,7 +241,7 @@
             </td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
     </div> 
   </div>
   <script>
@@ -229,7 +249,7 @@
         el: '#app',
         data: {
           name: 'Aquí tu nombre',
-          email: 'asuario@landes.cl',
+          email: 'usuario@landes.cl',
           phone: '+56 9 1234 5678',
           city: 'Santiago'
         }
