@@ -78,54 +78,44 @@
           </td>
           <td>
             <div style="font-family:Arial; color:#0068a7;border-left:2px solid #0068a7;float:left;padding-left:15px;">
-              <span style="font-size:16px; font-family:Arial; font-weight:bold; color:#0068a7">{{ name }}</span>
-              <span style="font-size:13px; font-family:Arial; color:#666">
-                <a href="#" style="text-decoration:none; color:#666; font-weight:bold; padding-bottom:5px; display:block;">
-                  <img src="http://www.landes.cl/skype.png" width="15px" style="margin-right:3px; float: left;">
-                  <span style=" display:block; padding-bottom:px; float: left;">{{ email }}</span>
-                </a>
-                <br>
-    
-                <a href="#" style="text-decoration:none; color:#666; font-weight:bold;">
-                  <img src="http://www.landes.cl/phone.png" width="15px" style="margin-right:3px; float: left;">
-                  <span style=" display:block; padding-bottom:px; float: left;">{{ phone }}</span>
-                </a>
+              <span style="font-size:16px; font-weight:bold; color:#0068a7; display:block; margin-bottom: 3px;">{{ name }}</span>
+              <span style="font-size: 13px; font-weight:bold; color:#666;">
+                <span style="display:block;">{{ email }}</span>
+                <span style="display:block;">{{ phone }}</span>  
               </span>
-              <br>
-              <br>
               <template v-if="city === 'Santiago'">
-                <span style="font-size:13px; font-family:Arial; color:#666">
-                  <a href="#" style="text-decoration:none; color:#555">Av. Tajamar 183, of 702, Las Condes, Santiago.</a><br>
-                  <a href="#" style="text-decoration:none; color:#555">+56 2 2233 7151</a><br>
-                  <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
-                </span>
+              <span style="font-size:13px; font-family:Arial; color:#555; display: block; margin-top: 10px;">
+                <span style="display:block;">Av. Tajamar 183, of 702, Las Condes, Santiago.</span>
+                <span style="display:block;">+56 2 2233 7151</span>
+                <span style="color:#0068a7; font-weight:bold; display:block;">www.landes.cl</span>
+              </span>
               </template>
               <template v-if="city === 'Talcahuano'">
-                <span style="font-size:13px; font-family:Arial; color:#666">
-                  <a href="#" style="text-decoration:none; color:#555">Isla Rocuant S/N, Talcahuano.</a><br>
-                  <a href="#" style="text-decoration:none; color:#555">+56 41 285 7000</a><br>
-                  <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
+                <span style="font-size:13px; font-family:Arial; color:#555; display: block; margin-top: 10px;">
+                  <span style="display:block;">Isla Rocuant S/N, Talcahuano.</span>
+                  <span style="display:block;">+56 41 285 7000</span>
+                  <span style="color:#0068a7; font-weight:bold; display:block;">www.landes.cl</span>
                 </span>
               </template>
               <template v-if="city === 'Dalcahue'">
-                <span style="font-size:13px; font-family:Arial; color:#666">
-                  <a href="#" style="text-decoration:none; color:#555">Astilleros S/N, Dalcahue, Chiloé.</a><br>
-                  <a href="#" style="text-decoration:none; color:#555">+56 65 264 1701</a><br>
-                  <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
+                <span style="font-size:13px; font-family:Arial; color:#555; display: block; margin-top: 10px;">
+                  <span style="display:block;">Astilleros S/N, Dalcahue, Chiloé.</span>
+                  <span style="display:block;">+56 65 264 1701</span>
+                  <span style="color:#0068a7; font-weight:bold; display:block;">www.landes.cl</span>
                 </span>
               </template>
               <template v-if="city === 'San Vicente'">
-                <span style="font-size:13px; font-family:Arial; color:#666">
-                  <a href="#" style="text-decoration:none; color:#555">Caleta Infernillo S/N, Talcahuano.</a><br>
-                  <a href="#" style="text-decoration:none; color:#555">+56 41 285 7095</a><br>
-                  <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
+                <span style="font-size:13px; font-family:Arial; color:#555; display: block; margin-top: 10px;">
+                  <span style="display:block;">Caleta Infernillo S/N, Talcahuano.</span>
+                  <span style="display:block;">+56 41 285 7095</span>
+                  <span style="color:#0068a7; font-weight:bold; display:block;">www.landes.cl</span>
                 </span>
               </template>
               <template v-if="city === 'TTP'">
-                <span style="font-size:13px; font-family:Arial; color:#666">
-                  <a href="#" style="text-decoration:none; color:#555">Blanco Encalada 701, Talcahuano.</a><br>
-                  <a href="#" style="text-decoration:none; color:#555">+56 41 285 7093</a><br>
-                  <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
+                <span style="font-size:13px; font-family:Arial; color:#555; display: block; margin-top: 10px;">
+                  <span style="display:block;">Blanco Encalada 701, Talcahuano.</span>
+                  <span style="display:block;">+56 41 285 7093</span>
+                  <span style="color:#0068a7; font-weight:bold; display:block;">www.landes.cl</span>
                 </span>
               </template>
             </div>
@@ -133,115 +123,6 @@
         </tr>
       </tbody>
       </table>
-
-      <!-- <table border=0 style="padding:40px 0 0 0;">
-        <tbody>
-          <tr>
-            <td>
-              <a href="#" style="text-decoration:none;">
-                <img style="width:150px;" src="jrr_landes.png" alt="Logo Landes S.A.">
-              </a>
-            </td>
-            <td>
-              <div style="font-family:Arial; color:#0068a7;border-left:2px solid #0068a7;float:left;padding-left:15px;">
-                <span style="font-size:16px; font-family:Arial; font-weight:bold; color:#0068a7">{{ name }}</span>
-                <span style="font-size:13px; font-family:Arial; color:#666">
-                  <a href="#" style="text-decoration:none; color:#666; font-weight:bold; padding-bottom:5px; display:block;">
-                    <img src="http://www.landes.cl/skype.png" width="15px" style="margin-right:3px; float: left;">
-                    <span style=" display:block; padding-bottom:px; float: left;">{{ email }}</span>
-                  </a>
-                  <br>
-      
-                  <a href="#" style="text-decoration:none; color:#666; font-weight:bold;">
-                    <img src="http://www.landes.cl/phone.png" width="15px" style="margin-right:3px; float: left;">
-                    <span style=" display:block; padding-bottom:px; float: left;">{{ phone }}</span>
-                  </a>
-                </span>
-                <br>
-                <br>
-                <template v-if="city === 'Santiago'">
-                  <span style="font-size:13px; font-family:Arial; color:#666">
-                    <a href="#" style="text-decoration:none; color:#555">Av. Tajamar 183, of 702, Las Condes, Santiago.</a><br>
-                    <a href="#" style="text-decoration:none; color:#555">+562 2233 7151</a><br>
-                    <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
-                  </span>
-                </template>
-                <template v-if="city === 'Talcahuano'">
-                  <span style="font-size:13px; font-family:Arial; color:#666">
-                    <a href="#" style="text-decoration:none; color:#555">Isla Rocuant S/N, Talcahuano.</a><br>
-                    <a href="#" style="text-decoration:none; color:#555">+56 41 285 7000</a><br>
-                    <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
-                  </span>
-                </template>
-                <template v-if="city === 'Dalcahue'">
-                  <span style="font-size:13px; font-family:Arial; color:#666">
-                    <a href="#" style="text-decoration:none; color:#555">Astilleros S/N, Dalcahue, Chiloé.</a><br>
-                    <a href="#" style="text-decoration:none; color:#555">+56 65 264 1701</a><br>
-                    <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
-                  </span>
-                </template>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
-
-      <!-- <table border=0 style="padding:40px 0 0 0;">
-        <tbody>
-          <tr>
-            <td>
-              <a href="#" style="text-decoration:none;">
-                <img style="width:150px;" src="LANDES.PNG" alt="Logo Landes S.A.">
-              </a>
-            </td>
-            <td>
-              <div style="font-family:Arial; color:#0068a7;border-left:2px solid #0068a7;border-right: 2px solid #0068a7; float:left;padding-left:15px;">
-                <span style="font-size:16px; font-family:Arial; font-weight:bold; color:#0068a7">{{ name }}</span>
-                <span style="font-size:13px; font-family:Arial; color:#666">
-                  <a href="#" style="text-decoration:none; color:#666; font-weight:bold; padding-bottom:5px; display:block;">
-                    <img src="http://www.landes.cl/skype.png" width="15px" style="margin-right:3px; float: left;">
-                    <span style=" display:block; padding-bottom:px; float: left;">{{ email }}</span>
-                  </a>
-                  <br>
-      
-                  <a href="#" style="text-decoration:none; color:#666; font-weight:bold;">
-                    <img src="http://www.landes.cl/phone.png" width="15px" style="margin-right:3px; float: left;">
-                    <span style=" display:block; padding-bottom:px; float: left;">{{ phone }}</span>
-                  </a>
-                </span>
-                <br>
-                <br>
-                <template v-if="city === 'Santiago'">
-                  <span style="font-size:13px; font-family:Arial; color:#666">
-                    <a href="#" style="text-decoration:none; color:#555">Av. Tajamar 183, of 702, Las Condes, Santiago.</a><br>
-                    <a href="#" style="text-decoration:none; color:#555">+562 2233 7151</a><br>
-                    <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
-                  </span>
-                </template>
-                <template v-if="city === 'Talcahuano'">
-                  <span style="font-size:13px; font-family:Arial; color:#666">
-                    <a href="#" style="text-decoration:none; color:#555">Isla Rocuant S/N, Talcahuano.</a><br>
-                    <a href="#" style="text-decoration:none; color:#555">+56 41 285 7000</a><br>
-                    <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
-                  </span>
-                </template>
-                <template v-if="city === 'Dalcahue'">
-                  <span style="font-size:13px; font-family:Arial; color:#666">
-                    <a href="#" style="text-decoration:none; color:#555">Astilleros S/N, Dalcahue, Chiloé.</a><br>
-                    <a href="#" style="text-decoration:none; color:#555">+56 65 264 1701</a><br>
-                    <a href="#" style="text-decoration:none; color:#0068a7; font-size:13px; font-weight:bold;">www.landes.cl</a>
-                  </span>
-                </template>
-              </div>
-            </td>
-            <td>
-              <a href="#" style="text-decoration:none;">
-                <img style="width:150px;" src="MARR_SEAFOODS.png" alt="Logo Landes S.A.">
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
     </div> 
   </div>
   <script>
